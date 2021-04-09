@@ -12,7 +12,11 @@ app.use('/', express.static(path.join(__dirname, 'Front-end')));
 
 io.on('connection', (socket) => {
     console.log('New socket formed from' + socket.id)
-    socket.emit('Connected')
+    socket.emit('connected')
+    socket.on('sendmsg', (data) => {
+        io.emit('recv_msg', data)
+
+    })
 })
 
 server.listen(2345, () => console.log('Website open on http://localhost:2345'))

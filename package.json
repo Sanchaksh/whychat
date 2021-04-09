@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Sanchaksh/whychat#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "jquery": "^3.6.0",
     "socket.io": "^4.0.1"
   }
 }
