@@ -1,2 +1,4 @@
 let socket = io();
-console.log("socket formed on" + socket.id)
+socket.on('connection', () =>{
+    console.log("Connected" + socket.id)
+}) 
