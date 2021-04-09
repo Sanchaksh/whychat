@@ -1,1 +1,2 @@
-console.log("Hey Guys")
+let socket = io();
+console.log("socket formed on" + socket.id)
